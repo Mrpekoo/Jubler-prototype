@@ -3,6 +3,7 @@
     --secondary-bg-color: #1E1E21;
     --main-light-grey: #898988;
     --main-dark-grey: #5A5A5A;
+    --lemon: #FFE44A;
     --radius: 1rem;
     --side-margins: 7vw;
 }
@@ -106,13 +107,18 @@ body {
 .infosnapshot {
     width: 100%;
     background-color: red;
-    height: 10rem;
+    height: 20rem;
     display: flex;
 }
+/* #region image-slider */
 .image-slider {
     background-color: blue;
     display: flex;
+    width: 600px;
+    flex-shrink: 0;
 }
+/* #endregion image-slider */
+
 .info-box {
     margin: 1rem;
     width: 100%;
@@ -128,4 +134,33 @@ body {
 .info-box .cost p {
     line-height: 4em;
 }
-/* #endregion navbar */
+/* #region profile-snippet */
+.profile-snippet {
+    background-color: black;
+    color: var(--main-dark-grey);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile-snippet > .img {
+    width: 64px;
+    height: 64px;
+    background-image: url("./bilder/profilbilder/genericPerson1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-radius: 50%;
+}
+.profile-snippet * {
+    margin: 0;
+}
+/* #endregion profile-snippet*/
+.standard-yellow-btn {
+    background-color: var(--lemon);
+    border: 0;
+    border-radius: var(--radius);
+    font-size: large;
+    font-weight: bold;
+    padding: .75rem 2rem;
+}
+/* #endregion main */
