@@ -1,9 +1,9 @@
 body{
     margin: 0;
-    background-color: #111;
+    background-color: #000;
 }
 .head{
-    background-color: #111;
+    background-color: #000;
     display: flex;
     justify-content: space-between;
 }
@@ -25,7 +25,7 @@ body{
     flex-direction: row;
     width: auto;
     margin: auto;
-    background-color: #111;
+    background-color: rgb(0, 0, 0);
 }
 #bar{
     background-color: #1E1E21;
@@ -60,7 +60,7 @@ button{
 }
 .navbar {
     overflow: hidden;
-    background-color: #111 ;
+    background-color: #000 ;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
@@ -98,7 +98,7 @@ button{
     margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: #111;
+    background-color: #000;
 }
 .dropdown-content {
     display: none;
@@ -133,26 +133,38 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .partyDIV{
     width: 17vw;
-    height: 265px;
+    height: 17.7vw;
     overflow: hidden;
     border-radius: 20px;
     display: block;
 }
 .PartyPlacePic{ 
-    width: 450px;
-    height: 350px;
-    margin: -75px 0 0 -100px;
+    height: 100%;
 }
 .main-content {
     display: flex;
     padding: 0 10vw;
     justify-content: space-between;
-    margin-top: 40px;
-}
-.PIC-h2{
-
+    margin-top: 80px;
 }
 .PIC-content{
     margin: 0 0;
-
+    opacity: 20%;
+}
+.PIC-texst{
+    margin-top: 4px;
+    font-size: 18px;
+}
+.Fotter{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    color: #000;
+}
+#Fotter-h2{
+    
 }
