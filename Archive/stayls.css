@@ -60,11 +60,11 @@ button{
 }
 .navbar {
     overflow: hidden;
-    background-color: #bbb  ;
+    background-color: #111 ;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-left: 5vw;
+    padding-left: 9vw;
     padding-right: 10vw;
 }
 .navbar a {
@@ -122,15 +122,37 @@ button{
 .show {
     display: block;
 }
-
-
-h1{
+h1, h2, h3, h4, h5, h6, p{
     color: white;
+    font-family: Helvetica;
+    font-weight: 500;
 }
 #SpotsNearYou{
     margin-left: 10vw;
     margin-top: 50px;
 }
-#PartyPlase1{
-   width: 8vw;
+.partyDIV{
+    width: 17vw;
+    height: 265px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: block;
+}
+.PartyPlacePic{ 
+    width: 450px;
+    height: 350px;
+    margin: -75px 0 0 -100px;
+}
+.main-content {
+    display: flex;
+    padding: 0 10vw;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.PIC-h2{
+
+}
+.PIC-content{
+    margin: 0 0;
+
 }
