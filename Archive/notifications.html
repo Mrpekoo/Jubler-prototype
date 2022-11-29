@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="notificationsStyles.css">
+    <script src="./notificationsLogic.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a id="logo-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <img src="bilder/Asset 1@2x.png" id="navbar-logo">
+        </a>
+        <div>
+            <a href="#news">
+                <img src="./bilder/icons/message-square.svg" class="icon">
+            </a>
+            <a href="#home">
+                <img src="./bilder/icons/bell.svg" class="icon">
+            </a>
+            <a href="#news">
+                <img src="./bilder/icons/user.svg" class="icon">
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                    <img src="./bilder/icons/menu.svg" class="icon">
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#1">Link 1</a>
+                    <a href="#2">Link 2</a>
+                    <a href="#3">Link 3</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="main">
+        <h1>Notifications</h1>
+        <div class="notification-list">
+            <div class="notification">
+                <h4>Julian sendt you a text message «Hi, i like your thingy wh…»</h4>
+                <div class="flag"></div>
+            </div>
+            <div class="notification active">
+                <h4>You now have 100 stars on your rental «Big Nice House»</h4>
+                <div class="flag"></div>
+            </div>
+            <div class="notification">
+                <h4>You now have 1 star on your rental «Big good House»</h4>
+                <div class="flag"></div>
+            </div>
+            <div class="notification">
+                <h4>You are perma banned from Jubler due to violation toward...</h4>
+                <div class="flag"></div>
+            </div>
+            <div class="notification active">
+                <h4>The Jubler team sendt you a message</h4>
+                <div class="flag"></div>
+            </div>
+            <div class="notification">
+                <h4>You need to eat your daily sandwich</h4>
+                <div class="flag"></div>
+            </div>
+            <div class="notification active">
+                <h4>Vibeke sendt you a message «hipp og hopp, norsk er topp»</h4>
+                <div class="flag"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

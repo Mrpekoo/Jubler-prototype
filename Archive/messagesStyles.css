@@ -1,0 +1,170 @@
+:root {
+    --main-bg-color: #000000;
+    --secondary-bg-color: #1E1E21;
+    --main-light-grey: #898988;
+    --main-dark-grey: #5A5A5A;
+    --lemon: #FFE44A;
+    --radius: 1rem;
+    --side-margins: 7vw;
+    --image-slider-width: 600px;
+}
+body {
+    margin: 0;
+    background-color: var(--main-bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #region navbar */
+.navbar {
+    overflow: hidden;
+    background-color: var(--main-bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem var(--side-margins);
+}
+.icon {
+    pointer-events: none;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+
+}
+.navbar a, .dropbtn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbar-logo {
+    width: 2rem;
+    height: fit-content;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: var(--secondary-bg-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--radius);
+    border-top-left-radius: 0;
+    min-width: 9rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.show {
+    display: block;
+}
+
+/* #endregion navbar */
+/* #region main */
+.main {
+    padding: 0 var(--side-margins);
+    color: white;
+}
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    user-select: none;
+    cursor: pointer;
+    color: var(--main-dark-grey);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 0;
+    border-left: 1px solid var(--main-dark-grey);
+    border-right: 1px solid var(--main-dark-grey);
+    border-bottom: 1px solid var(--main-dark-grey);
+}
+.message .profile {
+    display: flex;
+    align-items: center;
+}
+.message .profile .profile-info {
+    padding-left: 1rem;
+}
+.message .message-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.img {
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.messages .message:first-child {
+    border: 1px solid var(--main-dark-grey);
+}
+.name {
+    color: white;
+    font-weight: bold;
+}
+.img img {
+    width: 100%;
+}
+.message .profile * {
+    margin: 0;
+}
+.message .flag {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--main-dark-grey);
+    border-radius: 50%;
+}
+.message.active .new-message {
+    color: var(--lemon);
+}
+.message.active .flag{
+    background-color: var(--lemon);
+}
+/* #endregion main */
