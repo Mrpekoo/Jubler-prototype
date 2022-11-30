@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <script src="profilLogic.js" defer></script>
+    <link rel="stylesheet" href="profilStyles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a id="logo-a" href="./jubler.html">
+            <img src="bilder/Asset 1@2x.png" id="navbar-logo">
+        </a>
+        <div>
+            <a href="./messages.html">
+                <img src="./bilder/icons/message-square.svg" class="icon">
+            </a>
+            <a href="./notifications.html">
+                <img src="./bilder/icons/bell.svg" class="icon">
+            </a>
+            <a href="#news">
+                <img src="./bilder/icons/user.svg" class="icon">
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                    <img src="./bilder/icons/menu.svg" class="icon">
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 1</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 2</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 3</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="main">
+        <div class="card">
+            <div class="infobox">
+                <div class="img">
+                    <img src="./bilder/profilbilder/genericPerson1.jpeg" alt="profilbilde">
+                </div>
+                <div class="card-info">
+                    <h1>Theodor Strøm-Thrane</h1>
+                    <div class="verifisert">
+                        Verifisert
+                        <img src="./bilder/icons/check.svg">
+                    </div>
+                    <p>4.5 stjerner</p>
+                    <p>theodor.ekte@gmail.com</p>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <button>
+                    <img src="./bilder/icons/edit.svg" class="icon">
+                </button>
+            </a>
+        </div>
+        <div>
+            <h1>Your rentals</h1>
+            <div class="rentals">
+                <div>
+                    <div class="partyDIV">
+                        <img class="PartyPlacePic" src="bilder/Party-Inspo-How-to-Set-Up-Your-Party-Venue-1024x576.jpg" alt="">
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="PIC-h2">Party plase</h3>
+                        <p>3 999 kr/døgn</p>
+                        <div class="listing-type">
+                            <img src="./bilder/icons/smile.svg">
+                            <p>festlokale</p>
+                        </div>
+                        <p class="listing-host">Profesjonell vert</p>
+                        <p class="listing-host">4.5/5 stjerner</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="partyDIV">
+                        <img class="PartyPlacePic" src="bilder/Party-Inspo-How-to-Set-Up-Your-Party-Venue-1024x576.jpg" alt="">
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="PIC-h2">Party plase</h3>
+                        <p>3 999 kr/døgn</p>
+                        <div class="listing-type">
+                            <img src="./bilder/icons/smile.svg">
+                            <p>festlokale</p>
+                        </div>
+                        <p class="listing-host">Profesjonell vert</p>
+                        <p class="listing-host">4.5/5 stjerner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
