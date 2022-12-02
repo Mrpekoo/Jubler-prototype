@@ -160,15 +160,18 @@ h1, h2, h3, h4, h5, h6, p{
     flex-direction: row;
     color: white;
     width: 100%;
-    background-color: red;
+    background-color: #1E1E21;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #fotter{
     width: 82vw;
+    margin-bottom: 0;
 }
-.fotter-1{
+/*.fotter-1{
     margin-top: 40px;
     display: flex;
     flex-direction: row;
@@ -187,4 +190,4 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .fotter-list{
 
-}
+}*/
